@@ -1,0 +1,24 @@
+{
+  "name": "BigHugs",
+  "homepage": "https://github.com/fritzdenim/BigHugs",
+  "authors": [
+    "Franz Noel Tanglao <franz@asteriainteractive.com>"
+  ],
+  "description": "Bighugs Photo Booth App",
+  "main": "",
+  "keywords": [
+    "big",
+    "hugs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
