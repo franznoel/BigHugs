@@ -7,3 +7,12 @@
 .text-center {
     text-align:center;
 }
+#wrapper {
+  padding-top:50px;
+}
+#main-container {
+  padding-bottom:50px;
+}
+.nav > li > a {
+	padding:3px;
+}
