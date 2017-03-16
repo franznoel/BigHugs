@@ -1,41 +1,34 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="bighugs">
     <head>
-        <title>Big Hugs</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
-        <script src="/scripts/firebase-config.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+      <base href="/">
+      <title>Big Hugs</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+      <script>
+        var config = {
+          apiKey: "AIzaSyDSvv-wjk_IN7YENJnd2k-fnRgHMNy8Hww",
+          authDomain: "bighugs-62556.firebaseapp.com",
+          databaseURL: "https://bighugs-62556.firebaseio.com",
+          storageBucket: "bighugs-62556.appspot.com",
+          messagingSenderId: "45208731668",
+        };
+        firebase.initializeApp(config);
+      </script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/simple-sidebar.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+      <script src="/libs/angular-route/angular-route.min.js"></script>
+      <!--<script src="/libs/angular-resource/angular-resource.min.js"></script>-->
+      <script src="/js/scripts.js"></script>
     </head>
     <body>
-        <div class="container">
-          <div class="row">
-            <div id="login-form" class="col-md-offset-3 col-md-6">
-                <div class="panel panel-default">
-                  <div class="panel-body">
-                    <h1 class="text-center">Big Hugs Photo Booth</h1>
-                    <hr/>
-                    <form method="post" action="/dashboard.html">
-                      <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" name="username" class="form-control input-lg" value="" placeholder="Username" />
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="text" name="password" class="form-control input-lg" value="" placeholder="Password" />
-                      </div>
-                      <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Login">
-                      <a href="/sign-up.html" class="btn btn-default btn-lg">Sign Up</a>
-                    </form>
-                    <hr/>
-                    <a href="/forgot-password">Forgot Password</a>
-                  </div>
-                </div>
-            </div><!-- /.col-md-4 -->
-          </div>
-        </div>
+      <div class="container-fluid">
+        <div ng-view></div>
+      </div>
     </body>
 </html>

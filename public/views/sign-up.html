@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row">
+    <div id="login-form" class="col-md-12">
+      <h2>Big Hugs</h2>
+      <hr/>
+      <h4>Sign Up</h4>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <form id="signUpForm" method="post" action="/sign-up">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="eventDate">Date</label>
+                    <input type="date" id="eventDate" name="eventDate" class="form-control" value="" />
+                  </div>
+                  <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" class="form-control" value="" />
+                  </div>
+                  <div class="form-group">
+                    <label for="eventType">Event Type</label>
+                      <input list="eventType" class="form-control" name="eventType" placeholder="Event Type" />
+                    </label>
+                    <datalist id="eventType">
+                      <option value="Birthdays">
+                      <option value="Business Dinners">
+                      <option value="Opening Ceremonies">
+                      <option value="Product Launches">
+                      <option value="Trade Shows">
+                      <option value="Weddings">
+                    </datalist>
+                  </div>
+                  <div class="form-group">
+                    <label for="guestsCount">Number of Guests</label>
+                    <input type="number" name="guestsCount" class="form-control" value="0" placeholder="Number of Guests" style="width:30%;" />
+                  </div>
+                  <hr/>
+                  <div class="form-group">
+                    <label for="referredBy">Referred By</label>
+                    <input type="text" name="referredBy" class="form-control" value="" placeholder="Referred By" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="clientName">Client Name</label>
+                    <input type="text" id="clientName" name="clientName" class="form-control" value="" placeholder="Client Name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="clientPhone">Phone</label>
+                    <input type="text" id="clientPhone" name="clientPhone" class="form-control" value="" placeholder="Phone" />
+                  </div>
+                  <div class="form-group">
+                    <label for="clientEmail">Email</label>
+                    <input type="clientEmail" id="clientEmail" name="clientEmail" class="form-control" value="" placeholder="Email" />
+                  </div>
+                </div>
+              </div>
+              <hr/>
+              <div class="btn-toolbar pull-right">
+                <a href="/" class="btn btn-default btn-lg">Cancel</a>
+                <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Sign Up">
+              </div>
+            </form>
+          </div>
+        </div>
+    </div><!-- /.col-md-4 -->
+  </div>
+</div>
